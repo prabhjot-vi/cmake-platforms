@@ -1,0 +1,10 @@
+{
+    "version": 7,
+    "configurePresets": [
+        {
+            "name": "config-Ninja",
+            "hidden": true,
+            "generator": "Ninja"
+        }
+    ]
+}
