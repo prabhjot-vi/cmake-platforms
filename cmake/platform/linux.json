@@ -1,0 +1,97 @@
+{
+    "version": 7,
+    "include": [
+        "../compiler/gcc.json",
+        "../compiler/clang.json",
+        "../config/binaryDir.json",
+        "../config/debug.json",
+        "../config/ninja.json",
+        "../config/release.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "x64-windows-gcc-debug",
+            "inherits": [
+                "config-binaryDir",
+                "config-debug",
+                "config-Ninja",
+                "compiler-gcc"
+            ]
+        },
+        {
+            "name": "x64-windows-gcc-release",
+            "inherits": [
+                "config-binaryDir",
+                "config-release",
+                "config-Ninja",
+                "compiler-gcc"
+            ]
+        },
+        {
+            "name": "x64-windows-clang-debug",
+            "inherits": [
+                "config-binaryDir",
+                "config-debug",
+                "config-Ninja",
+                "compiler-clang"
+            ]
+        },
+        {
+            "name": "x64-windows-clang-release",
+            "inherits": [
+                "config-binaryDir",
+                "config-release",
+                "config-Ninja",
+                "compiler-clang"
+            ]
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "x64-windows-gcc-debug",
+            "configurePreset": "x64-windows-gcc-debug"
+        },
+        {
+            "name": "x64-windows-gcc-release",
+            "configurePreset": "x64-windows-gcc-release"
+        },
+        {
+            "name": "x64-windows-clang-debug",
+            "configurePreset": "x64-windows-clang-debug"
+        },
+        {
+            "name": "x64-windows-clang-release",
+            "configurePreset": "x64-windows-clang-release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "x64-windows-gcc-debug",
+            "configurePreset": "x64-windows-gcc-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "x64-windows-gcc-release",
+            "configurePreset": "x64-windows-gcc-release",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "x64-windows-clang-release",
+            "configurePreset": "x64-windows-clang-release",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "x64-windows-clang-debug",
+            "configurePreset": "x64-windows-clang-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        }
+    ]
+}

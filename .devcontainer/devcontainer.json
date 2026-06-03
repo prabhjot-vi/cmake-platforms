@@ -1,0 +1,14 @@
+{
+    "name": "cmake-platforms",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    }
+}
