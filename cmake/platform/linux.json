@@ -14,7 +14,7 @@
             "inherits": [
                 "config-binaryDir",
                 "config-debug",
-                "config-Ninja",
+                "config-ninja",
                 "compiler-gcc"
             ]
         },
@@ -23,7 +23,7 @@
             "inherits": [
                 "config-binaryDir",
                 "config-release",
-                "config-Ninja",
+                "config-ninja",
                 "compiler-gcc"
             ]
         },
@@ -32,7 +32,7 @@
             "inherits": [
                 "config-binaryDir",
                 "config-debug",
-                "config-Ninja",
+                "config-ninja",
                 "compiler-clang"
             ]
         },
@@ -41,7 +41,7 @@
             "inherits": [
                 "config-binaryDir",
                 "config-release",
-                "config-Ninja",
+                "config-ninja",
                 "compiler-clang"
             ]
         }
